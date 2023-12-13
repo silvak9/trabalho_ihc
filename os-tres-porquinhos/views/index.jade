@@ -1,0 +1,32 @@
+extends layout
+
+block content  
+  a-scene(cursor='rayOrigin: mouse' raycaster='objects: .raycastable' position="0 1.6 20" inspector="url: https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js")
+    a-camera(position="0 1.6 20")
+      a-cursor(color="red")
+    a-text(id="titulo" class="raycastable" titulo value="Os tres porquinhos" position="0 8 0" color="blue" scale="6 6 6" visible="true")
+    
+    a-box(id="box1" src="images/p2.jpg" position="-25 2.5 0" scale="4 4 4" class="raycastable" rotation="0 30 0" visible="true")
+    a-cone(id="cone1" src="images/p2.jpg" position="-25 5.8 0" scale="4 4 4" class="raycastable" rotation="0 30 0" visible="true")
+
+    a-box(id="box2" src="images/m.jpg" position="0 1.8 0" scale="4 4 4" class="raycastable" visible="true")
+    a-cone(id="cone2" src="images/m.jpg" position="0 5.0 0" scale="4 4 4" class="raycastable" visible="true")
+
+    a-box(src="images/r.jpg" position="25 2.0 0" scale="4 4 4" class="raycastable" rotation="0 -30 0" visible="true")
+    a-cone(src="images/r.jpg" position="25 5.0 0" scale="4 4 4" class="raycastable" rotation="0 -30 0" visible="true")
+
+    a-circle(id="btn" radius="0.25" position="1 1.6 8" color="red" event-set__invisivel="_event: click; _target: #cone1; visible: false; color: none" event-set__esconder="_event: click; _target: #box1; visible:false" event-set__atualizar="_event: click; _target: #lobo; position: 0 -1 25, rotation: -5 -22 0")
+
+    a-circle(id="btn1" radius="0.25" position="1 1 8" color="yellow" event-set__invisivel="_event: click; _target: #cone2; visible: false; color: none" event-set__esconder="_event: click; _target: #box2; visible:false" event-set__atualizar="_event: click; _target: #lobo; position: 22 -0.8 25, rotation: -5 -24 0 visible:true")
+
+    a-circle(id="btn2" mycomponent2 radius="0.25" position="1 2.5 8" color="yellow" event-set__atualizar="_event: click; _target: #text, #text1; visible:true")
+
+
+    a-gltf-model(id="porquinho1" mycomponent2 class="raycastable" src="models/pork/pork.gltf" position="-30 2.6 2" rotation="0 35 0")
+    a-gltf-model(id="porquinho2" mycomponent2 class="raycastable" src="models/pork/pork.gltf" position="-5 1.8 0" rotation="0 0 0")
+    a-gltf-model(id="porquinho3" mycomponent2 class="raycastable" src="models/pork/pork.gltf" position="20 2.0 0" rotation="0 -25 0")
+    a-gltf-model(id="lobo" src="models/lobo.gltf" color="red" mycomponent class="raycastable" scale="2 2 2" position="-20 -1 25" rotation="-5 -18 0" visible="false")
+
+    a-text(id="text" value="Aow sr lobo, casa de palha, madeira e facil, so que aqui no tijolo o sistema é bruto..." scale="6 6 6" position="-5 8 0" visible="false") 
+    
+    //- a-entity(environment="preset: moon; groundColor: #445; grid: cross")

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Wolf figure
+* source:	https://sketchfab.com/3d-models/wolf-figure-b0484270b90549558bdae50a56d63b14
+* author:	mrfunnysheep (https://sketchfab.com/mrfunnysheep)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Wolf figure" (https://sketchfab.com/3d-models/wolf-figure-b0484270b90549558bdae50a56d63b14) by mrfunnysheep (https://sketchfab.com/mrfunnysheep) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
